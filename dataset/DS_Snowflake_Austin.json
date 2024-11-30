@@ -1,0 +1,233 @@
+{
+	"name": "DS_Snowflake_Austin",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SN_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CRASH_ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CRASH_FATAL_FL",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CASE_ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "PRIMARY_ADDRESS",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "SECONDARY_ADDRESS",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "RPT_BLOCK_NUM",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "RPT_STREET_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "RPT_STREET_SFX",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CRASH_SPEED_LIMIT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "ROAD_CONSTR_ZONE_FL",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "FLOAT"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "FLOAT"
+			},
+			{
+				"name": "CRASH_SEV_ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "SUS_SERIOUS_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NONINCAP_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "POSS_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NON_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "UNKN_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "TOT_INJRY_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "DEATH_CNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "UNITS_INVOLVED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "POINT",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "MOTOR_VEHICLE_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "MOTOR_VEHICLE_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "BICYCLE_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "BICYCLE_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PEDESTRIAN_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "PEDESTRIAN_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "MOTORCYCLE_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "MOTORCYCLE_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "OTHER_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "OTHER_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "ONSYS_FL",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "PRIVATE_DR_FL",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "MICROMOBILITY_SERIOUS_INJURY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "MICROMOBILITY_DEATH_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "CRASH_TIMESTAMP_US_CENTRAL",
+				"type": "TIMESTAMP_NTZ"
+			},
+			{
+				"name": "CRASH_TIMESTAMP",
+				"type": "TIMESTAMP_NTZ"
+			},
+			{
+				"name": "IS_DELETED",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "IS_TEMPORARY_RECORD",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "LAW_ENFORCEMENT_FATALITY_COUNT",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "REPORTED_STREET_PREFIX",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "JSON",
+			"table": "AUSTIN_CRASHES"
+		}
+	}
+}
