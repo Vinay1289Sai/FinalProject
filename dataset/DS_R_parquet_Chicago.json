@@ -1,0 +1,213 @@
+{
+	"name": "DS_R_parquet_Chicago",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Traffic_Crashes_-_Crashes_20241128.parquet",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "CRASH_RECORD_ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_DATE_EST_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_DATE",
+				"type": "UTF8"
+			},
+			{
+				"name": "POSTED_SPEED_LIMIT",
+				"type": "UTF8"
+			},
+			{
+				"name": "TRAFFIC_CONTROL_DEVICE",
+				"type": "UTF8"
+			},
+			{
+				"name": "DEVICE_CONDITION",
+				"type": "UTF8"
+			},
+			{
+				"name": "WEATHER_CONDITION",
+				"type": "UTF8"
+			},
+			{
+				"name": "LIGHTING_CONDITION",
+				"type": "UTF8"
+			},
+			{
+				"name": "FIRST_CRASH_TYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "TRAFFICWAY_TYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LANE_CNT",
+				"type": "UTF8"
+			},
+			{
+				"name": "ALIGNMENT",
+				"type": "UTF8"
+			},
+			{
+				"name": "ROADWAY_SURFACE_COND",
+				"type": "UTF8"
+			},
+			{
+				"name": "ROAD_DEFECT",
+				"type": "UTF8"
+			},
+			{
+				"name": "REPORT_TYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_TYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "INTERSECTION_RELATED_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "NOT_RIGHT_OF_WAY_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "HIT_AND_RUN_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "DAMAGE",
+				"type": "UTF8"
+			},
+			{
+				"name": "DATE_POLICE_NOTIFIED",
+				"type": "UTF8"
+			},
+			{
+				"name": "PRIM_CONTRIBUTORY_CAUSE",
+				"type": "UTF8"
+			},
+			{
+				"name": "SEC_CONTRIBUTORY_CAUSE",
+				"type": "UTF8"
+			},
+			{
+				"name": "STREET_NO",
+				"type": "UTF8"
+			},
+			{
+				"name": "STREET_DIRECTION",
+				"type": "UTF8"
+			},
+			{
+				"name": "STREET_NAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "BEAT_OF_OCCURRENCE",
+				"type": "UTF8"
+			},
+			{
+				"name": "PHOTOS_TAKEN_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "STATEMENTS_TAKEN_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "DOORING_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "WORK_ZONE_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "WORK_ZONE_TYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "WORKERS_PRESENT_I",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUM_UNITS",
+				"type": "UTF8"
+			},
+			{
+				"name": "MOST_SEVERE_INJURY",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_TOTAL",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_FATAL",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_INCAPACITATING",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_NON_INCAPACITATING",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_REPORTED_NOT_EVIDENT",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_NO_INDICATION",
+				"type": "UTF8"
+			},
+			{
+				"name": "INJURIES_UNKNOWN",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_HOUR",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_DAY_OF_WEEK",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_MONTH",
+				"type": "UTF8"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LOCATION",
+				"type": "UTF8"
+			}
+		]
+	}
+}
