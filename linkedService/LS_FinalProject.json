@@ -1,0 +1,10 @@
+{
+	"name": "LS_FinalProject",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://vehiclestor.dfs.core.windows.net/"
+		}
+	}
+}
