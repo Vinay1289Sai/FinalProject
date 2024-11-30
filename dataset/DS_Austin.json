@@ -2,14 +2,14 @@
 	"name": "DS_Austin",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "BS_FinalProject",
+			"referenceName": "LS_FinalProject",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"Directory": {
 				"type": "string"
 			},
-			"FileName": {
+			"FIleName": {
 				"type": "string",
 				"defaultValue": "Austin_Crash_Report_Data_-_Crash_Level_Records_20241128.tsv"
 			}
@@ -18,12 +18,12 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
+				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().FileName",
+					"value": "@dataset().FIleName",
 					"type": "Expression"
 				},
-				"container": "input"
+				"fileSystem": "input"
 			},
 			"columnDelimiter": "\t",
 			"escapeChar": "\\",
