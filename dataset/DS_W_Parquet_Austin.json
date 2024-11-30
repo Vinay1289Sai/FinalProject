@@ -1,0 +1,19 @@
+{
+	"name": "DS_W_Parquet_Austin",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Austin_Crash_Report_Data_-_Crash_Level_Records_20241128.parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
