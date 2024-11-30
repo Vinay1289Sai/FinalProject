@@ -852,7 +852,7 @@
 								},
 								"sink": {
 									"name": "UNITS_INVOLVED",
-									"type": "Int64"
+									"type": "String"
 								}
 							},
 							{
