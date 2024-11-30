@@ -1,0 +1,151 @@
+{
+	"name": "DS_Snowflake_Newyork",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SN_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "CRASH_DATE",
+				"type": "DATE"
+			},
+			{
+				"name": "CRASH_TIME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "BOROUGH",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "ZIP_CODE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "LATITUDE",
+				"type": "FLOAT"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "FLOAT"
+			},
+			{
+				"name": "LOCATION",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "ON_STREET_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CROSS_STREET_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "OFF_STREET_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "NUMBER_OF_PERSONS_INJURED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_PERSONS_KILLED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_PEDESTRIANS_INJURED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_PEDESTRIANS_KILLED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_CYCLIST_INJURED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_CYCLIST_KILLED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_MOTORIST_INJURED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NUMBER_OF_MOTORIST_KILLED",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_1",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_2",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_3",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_4",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_5",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "COLLISION_ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_1",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_2",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_3",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_4",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_5",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "JSON",
+			"table": "NEW_YORK_CRASHES"
+		}
+	}
+}
