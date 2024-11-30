@@ -9,7 +9,7 @@
 			"Directory": {
 				"type": "string"
 			},
-			"FIleName": {
+			"FileName": {
 				"type": "string",
 				"defaultValue": "Austin_Crash_Report_Data_-_Crash_Level_Records_20241128.tsv"
 			}
@@ -20,7 +20,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().FIleName",
+					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
 				"fileSystem": "input"

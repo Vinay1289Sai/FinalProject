@@ -559,8 +559,7 @@
 						"referenceName": "DS_Austin",
 						"type": "DatasetReference",
 						"parameters": {
-							"Directory": "na",
-							"FIleName": "Austin_Crash_Report_Data_-_Crash_Level_Records_20241128.tsv"
+							"Directory": "na"
 						}
 					}
 				],
@@ -1012,7 +1011,7 @@
 								},
 								"sink": {
 									"name": "CRASH_TIMESTAMP_US_CENTRAL",
-									"type": "DateTime"
+									"type": "String"
 								}
 							},
 							{
@@ -1022,7 +1021,7 @@
 								},
 								"sink": {
 									"name": "CRASH_TIMESTAMP",
-									"type": "DateTime"
+									"type": "String"
 								}
 							},
 							{
@@ -1067,7 +1066,7 @@
 							},
 							{
 								"source": {
-									"name": "DI_JOB_ID",
+									"name": "DI_CREATED_DT",
 									"type": "String"
 								},
 								"sink": {
@@ -1077,7 +1076,7 @@
 							},
 							{
 								"source": {
-									"name": "DI_CREATED_DT",
+									"name": "DI_JOB_ID",
 									"type": "String"
 								},
 								"sink": {
