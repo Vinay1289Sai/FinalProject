@@ -596,11 +596,17 @@
 						"additionalColumns": [
 							{
 								"name": "DI_JOB_ID",
-								"value": ""
+								"value": {
+									"value": "@pipeline().parameters.JobID",
+									"type": "Expression"
+								}
 							},
 							{
 								"name": "DI_CREATED_DT",
-								"value": "$$FILEPATH"
+								"value": {
+									"value": "@utcNow()",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
@@ -618,7 +624,14 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "BS_FinalProject",
+							"type": "LinkedServiceReference"
+						},
+						"path": "stgaustin"
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
@@ -993,6 +1006,10 @@
 								}
 							},
 							{
+								"source": {
+									"name": "Crash_timestamp_Central",
+									"type": "String"
+								},
 								"sink": {
 									"name": "CRASH_TIMESTAMP_US_CENTRAL",
 									"type": "DateTime"
@@ -1049,12 +1066,20 @@
 								}
 							},
 							{
+								"source": {
+									"name": "DI_JOB_ID",
+									"type": "String"
+								},
 								"sink": {
 									"name": "DI_CREATEDATE",
 									"type": "DateTime"
 								}
 							},
 							{
+								"source": {
+									"name": "DI_CREATED_DT",
+									"type": "String"
+								},
 								"sink": {
 									"name": "DI_JOBPID",
 									"type": "String"
