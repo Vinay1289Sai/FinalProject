@@ -628,6 +628,7 @@
 						"referenceName": "DS_Chicago",
 						"type": "DatasetReference",
 						"parameters": {
+							"Directory": "na",
 							"FileName": "Traffic_Crashes_-_Crashes_20241128.tsv"
 						}
 					}
@@ -638,8 +639,61 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Par_to_Stg",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Data_to_parquet",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.01:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"additionalColumns": [
+							{
+								"value": "$$FILEPATH"
+							},
+							{
+								"value": "$$FILEPATH"
+							}
+						],
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_R_parquet_Chicago",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
+		"parameters": {
+			"JobID": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
