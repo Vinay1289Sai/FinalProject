@@ -56,11 +56,15 @@
 			},
 			{
 				"name": "LATITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "LONGITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "CRASH_SEV_ID",
@@ -110,9 +114,7 @@
 			},
 			{
 				"name": "UNITS_INVOLVED",
-				"type": "NUMBER",
-				"precision": 38,
-				"scale": 0
+				"type": "VARCHAR"
 			},
 			{
 				"name": "POINT",
@@ -200,11 +202,11 @@
 			},
 			{
 				"name": "CRASH_TIMESTAMP_US_CENTRAL",
-				"type": "TIMESTAMP_NTZ"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "CRASH_TIMESTAMP",
-				"type": "TIMESTAMP_NTZ"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "IS_DELETED",
@@ -222,6 +224,14 @@
 			},
 			{
 				"name": "REPORTED_STREET_PREFIX",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DI_CREATEDATE",
+				"type": "TIMESTAMP_NTZ"
+			},
+			{
+				"name": "DI_JOBPID",
 				"type": "VARCHAR"
 			}
 		],

@@ -18,7 +18,7 @@
 			},
 			{
 				"name": "CRASH_DATE",
-				"type": "TIMESTAMP_NTZ"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "POSTED_SPEED_LIMIT",
@@ -94,7 +94,7 @@
 			},
 			{
 				"name": "DATE_POLICE_NOTIFIED",
-				"type": "TIMESTAMP_NTZ"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "PRIM_CONTRIBUTORY_CAUSE",
@@ -218,14 +218,26 @@
 			},
 			{
 				"name": "LATITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "LONGITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "LOCATION",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "DI_CREATEDATE",
+				"type": "TIMESTAMP_NTZ"
+			},
+			{
+				"name": "DI_JOBPID",
 				"type": "VARCHAR"
 			}
 		],
