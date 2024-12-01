@@ -1,0 +1,137 @@
+{
+	"name": "DS_R_Parquet_Newyork",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Motor_Vehicle_Collisions_-_Crashes_20241128.parquet",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "CRASH_DATE",
+				"type": "UTF8"
+			},
+			{
+				"name": "CRASH_TIME",
+				"type": "UTF8"
+			},
+			{
+				"name": "BOROUGH",
+				"type": "UTF8"
+			},
+			{
+				"name": "ZIP_CODE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "UTF8"
+			},
+			{
+				"name": "LOCATION",
+				"type": "UTF8"
+			},
+			{
+				"name": "ON_STREET_NAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "CROSS_STREET_NAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "OFF_STREET_NAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_PERSONS_INJURED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_PERSONS_KILLED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_PEDESTRIANS_INJURED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_PEDESTRIANS_KILLED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_CYCLIST_INJURED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_CYCLIST_KILLED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_MOTORIST_INJURED",
+				"type": "UTF8"
+			},
+			{
+				"name": "NUMBER_OF_MOTORIST_KILLED",
+				"type": "UTF8"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_1",
+				"type": "UTF8"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_2",
+				"type": "UTF8"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_3",
+				"type": "UTF8"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_4",
+				"type": "UTF8"
+			},
+			{
+				"name": "CONTRIBUTING_FACTOR_VEHICLE_5",
+				"type": "UTF8"
+			},
+			{
+				"name": "COLLISION_ID",
+				"type": "UTF8"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_1",
+				"type": "UTF8"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_2",
+				"type": "UTF8"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_3",
+				"type": "UTF8"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_4",
+				"type": "UTF8"
+			},
+			{
+				"name": "VEHICLE_TYPE_CODE_5",
+				"type": "UTF8"
+			}
+		]
+	}
+}
