@@ -5,15 +5,27 @@
 			"referenceName": "LS_FinalProject",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Directory": {
+				"type": "string"
+			},
+			"FileName": {
+				"type": "string",
+				"defaultValue": "Contributing Factor Mappingv1.tsv"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Contributing Factor Mappingv1.tsv",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
 				"fileSystem": "input"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
