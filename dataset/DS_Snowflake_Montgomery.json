@@ -26,7 +26,7 @@
 			},
 			{
 				"name": "CRASH_DATE_TIME",
-				"type": "TIMESTAMP_NTZ"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "HIT_RUN",
@@ -46,9 +46,7 @@
 			},
 			{
 				"name": "NUMBER_OF_LANES",
-				"type": "NUMBER",
-				"precision": 38,
-				"scale": 0
+				"type": "VARCHAR"
 			},
 			{
 				"name": "DIRECTION",
@@ -56,7 +54,7 @@
 			},
 			{
 				"name": "DISTANCE",
-				"type": "FLOAT"
+				"type": "VARCHAR"
 			},
 			{
 				"name": "DISTANCE_UNIT",
@@ -148,11 +146,15 @@
 			},
 			{
 				"name": "LATITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "LONGITUDE",
-				"type": "FLOAT"
+				"type": "FLOAT",
+				"precision": 38,
+				"scale": 0
 			},
 			{
 				"name": "LOCATION",

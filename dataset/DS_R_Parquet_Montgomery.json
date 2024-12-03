@@ -15,6 +15,155 @@
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Report_Number",
+				"type": "UTF8"
+			},
+			{
+				"name": "Local_Case_Number",
+				"type": "UTF8"
+			},
+			{
+				"name": "Agency_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "ACRS_Report_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Crash_Date_Time",
+				"type": "UTF8"
+			},
+			{
+				"name": "Hit_Run",
+				"type": "UTF8"
+			},
+			{
+				"name": "Route_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Lane_Direction",
+				"type": "UTF8"
+			},
+			{
+				"name": "Lane_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Number_of_Lanes",
+				"type": "UTF8"
+			},
+			{
+				"name": "Direction",
+				"type": "UTF8"
+			},
+			{
+				"name": "Distance",
+				"type": "UTF8"
+			},
+			{
+				"name": "Distance_Unit",
+				"type": "UTF8"
+			},
+			{
+				"name": "Road_Grade",
+				"type": "UTF8"
+			},
+			{
+				"name": "Road_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "Cross_Street_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "Off_Road_Description",
+				"type": "UTF8"
+			},
+			{
+				"name": "Municipality",
+				"type": "UTF8"
+			},
+			{
+				"name": "Related_Non_Motorist",
+				"type": "UTF8"
+			},
+			{
+				"name": "At_Fault",
+				"type": "UTF8"
+			},
+			{
+				"name": "Collision_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Weather",
+				"type": "UTF8"
+			},
+			{
+				"name": "Surface_Condition",
+				"type": "UTF8"
+			},
+			{
+				"name": "Light",
+				"type": "UTF8"
+			},
+			{
+				"name": "Traffic_Control",
+				"type": "UTF8"
+			},
+			{
+				"name": "Driver_Substance_Abuse",
+				"type": "UTF8"
+			},
+			{
+				"name": "Non_Motorist_Substance_Abuse",
+				"type": "UTF8"
+			},
+			{
+				"name": "First_Harmful_Event",
+				"type": "UTF8"
+			},
+			{
+				"name": "Second_Harmful_Event",
+				"type": "UTF8"
+			},
+			{
+				"name": "Junction",
+				"type": "UTF8"
+			},
+			{
+				"name": "Intersection_Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Road_Alignment",
+				"type": "UTF8"
+			},
+			{
+				"name": "Road_Condition",
+				"type": "UTF8"
+			},
+			{
+				"name": "Road_Division",
+				"type": "UTF8"
+			},
+			{
+				"name": "Latitude",
+				"type": "UTF8"
+			},
+			{
+				"name": "Longitude",
+				"type": "UTF8"
+			},
+			{
+				"name": "Location",
+				"type": "UTF8"
+			}
+		]
 	}
 }
