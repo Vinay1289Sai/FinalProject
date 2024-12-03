@@ -502,6 +502,22 @@
 				"typeProperties": {
 					"source": {
 						"type": "ParquetSource",
+						"additionalColumns": [
+							{
+								"name": "JOB_ID",
+								"value": {
+									"value": "@pipeline().parameters.jobid",
+									"type": "Expression"
+								}
+							},
+							{
+								"name": "DI_CERATED_DT",
+								"value": {
+									"value": "@utcNow()",
+									"type": "Expression"
+								}
+							}
+						],
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
@@ -915,6 +931,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"jobid": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
