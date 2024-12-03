@@ -641,7 +641,7 @@
 								},
 								"sink": {
 									"name": "NUMBER_OF_LANES",
-									"type": "Int64"
+									"type": "String"
 								}
 							},
 							{
@@ -661,7 +661,7 @@
 								},
 								"sink": {
 									"name": "DISTANCE",
-									"type": "Double"
+									"type": "String"
 								}
 							},
 							{
@@ -911,6 +911,26 @@
 								},
 								"sink": {
 									"name": "LOCATION",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "DI_CERATED_DT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DI_CREATEDATE",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "JOB_ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DI_JOBPID",
 									"type": "String"
 								}
 							}
