@@ -242,7 +242,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "JSON",
+			"schema": "PUBLIC",
 			"table": "CHICAGO_CRASHES"
 		}
 	}

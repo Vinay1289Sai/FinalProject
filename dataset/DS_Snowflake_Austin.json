@@ -236,7 +236,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "JSON",
+			"schema": "PUBLIC",
 			"table": "AUSTIN_CRASHES"
 		}
 	}

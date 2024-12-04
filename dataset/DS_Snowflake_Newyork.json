@@ -154,7 +154,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "JSON",
+			"schema": "PUBLIC",
 			"table": "NEW_YORK_CRASHES"
 		}
 	}

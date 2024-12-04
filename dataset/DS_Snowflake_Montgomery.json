@@ -162,7 +162,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "JSON",
+			"schema": "PUBLIC",
 			"table": "MONTGOMERY_CRASHES"
 		}
 	}

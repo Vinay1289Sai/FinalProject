@@ -7,36 +7,9 @@
 		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
-		"schema": [
-			{
-				"name": "DESCRIPTION",
-				"type": "VARCHAR"
-			},
-			{
-				"name": "CODE",
-				"type": "NUMBER",
-				"precision": 38,
-				"scale": 0
-			},
-			{
-				"name": "AUSTIN",
-				"type": "VARCHAR"
-			},
-			{
-				"name": "CHICAGO",
-				"type": "VARCHAR"
-			},
-			{
-				"name": "NEW_YORK",
-				"type": "VARCHAR"
-			},
-			{
-				"name": "MONTGOMERY",
-				"type": "VARCHAR"
-			}
-		],
+		"schema": [],
 		"typeProperties": {
-			"schema": "JSON",
+			"schema": "PUBLIC",
 			"table": "CONTRIBUTING_FACTORS"
 		}
 	}
