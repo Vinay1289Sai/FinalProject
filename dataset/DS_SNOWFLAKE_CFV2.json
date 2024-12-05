@@ -1,0 +1,43 @@
+{
+	"name": "DS_SNOWFLAKE_CFV2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SN_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "DESCRIPTION",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CODE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "AUSTIN",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CHICAGO",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "NEWYORK",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "MONTGOMERY",
+				"type": "VARCHAR"
+			}
+		],
+		"typeProperties": {
+			"schema": "PUBLIC",
+			"table": "CONTRIBUTING_FACTORS_2"
+		}
+	}
+}
