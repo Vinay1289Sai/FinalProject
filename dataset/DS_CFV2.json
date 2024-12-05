@@ -1,0 +1,32 @@
+{
+	"name": "DS_CFV2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Directory": {
+				"type": "string"
+			},
+			"FileName": {
+				"type": "string",
+				"defaultValue": "Contributing Factor Mappingv2 (1).xlsx"
+			}
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
