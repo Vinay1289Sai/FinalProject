@@ -131,6 +131,130 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Data_to_Snowflake",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Data_to_Parquet",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.01:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SnowflakeV2Sink",
+						"importSettings": {
+							"type": "SnowflakeImportCopyCommand"
+						}
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "BS_FinalProject",
+							"type": "LinkedServiceReference"
+						},
+						"path": "stgcfv2"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Description",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DESCRIPTION",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Code",
+									"type": "String"
+								},
+								"sink": {
+									"name": "CODE",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"name": "Austin",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AUSTIN",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Chicago",
+									"type": "String"
+								},
+								"sink": {
+									"name": "CHICAGO",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "New_York",
+									"type": "String"
+								},
+								"sink": {
+									"name": "NEWYORK",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Montgomery",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MONTGOMERY",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_R_Parquet_CFV2",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_SNOWFLAKE_CFV2",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
