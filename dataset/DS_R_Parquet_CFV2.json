@@ -1,0 +1,45 @@
+{
+	"name": "DS_R_Parquet_CFV2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FinalProject",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Contributing Factor Mappingv2 (1).xlsx.parquet",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Description",
+				"type": "UTF8"
+			},
+			{
+				"name": "Code",
+				"type": "UTF8"
+			},
+			{
+				"name": "Austin",
+				"type": "UTF8"
+			},
+			{
+				"name": "Chicago",
+				"type": "UTF8"
+			},
+			{
+				"name": "New_York",
+				"type": "UTF8"
+			},
+			{
+				"name": "Montgomery",
+				"type": "UTF8"
+			}
+		]
+	}
+}
